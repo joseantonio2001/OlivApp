@@ -1,18 +1,11 @@
-## SportZone
-Software para asesoramiento deportivo
-
+## CultivApp
+Software para asesoramiento de cultivo en Andalucía.
 
 ## Problema a solucionar
-Muchas veces hemos querido comenzar a llevar una vida más saludable iniciandonos en algún deporte pero no sabemos bien como empezar bien por la falta de experiencia en este o por la ausencia de entrenadores de ese deporte en nuestra zona. 
+Indecisión a la hora de cuándo cultivar un producto determinado debido al cambio constante de precipitaciones y temperatura en Andalucía.
 
+## ¿Quién usará la aplicación?
+Principalmente será una plataforma diseñada para agricultores cuyos cultivos se encuentren en Andalucía.
 
 ## Solución propuesta
-SportZone es un proyecto que tiene como fin que sus usuarios puedan iniciarse en el deporte que deseen con planes personalizados acorde con los parámetros que se indiquen como "deporte seleccionado", "tiempo disponible semanal", "estado físico actual", ...
-El sistema analizará los parámetros introducidos por el usuario y a partir de ellos generará un planning personalizado que incluirá sesiones de entrenamiento, recomendaciones de suplementación antes, durante y después las sesiones, y material deportivo necesario.
-
-
-## Lógica de negocio
-Los usuarios son los clientes que mediante una suscripción mensual podrán acceder a plannings de entrenamiento del deporte que seleccionen. Estos podrán tener funcionalidades como:
-	-Generar planning
-	-Historial de progreso (Al final de cada sesión de entrenamiento se podrá agregar un feedback para notificar sobre las sensaciones).
-	-Historial de actividades
+El cliente especificando un producto que desea cultivar y una región de Andalucía recibe la época del año donde resulta más rentable cultivar ese producto mediante una serie de cálculos que realiza el sistema. El sistema trabajará con informes de historiales de precipitaciones, horas de sol y temperaturas que facilita la Junta de Andalucía y haciendo una serie de cálculos encontrará el equilibrio entre estos tres parámetros para determinar dependiendo del producto cuando es la época del año idónea para llevar a cabo el cultivo del producto.

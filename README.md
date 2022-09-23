@@ -1,11 +1,17 @@
-## CultivApp
-Software para asesoramiento de cultivo en Andalucía.
+## OlivApp
+Software para asesoramiento de venta de aceite.
 
-## Problema a solucionar
-Indecisión a la hora de cuándo cultivar un producto determinado debido al cambio constante de precipitaciones y temperatura en Andalucía.
+## Definición del problema
+Este proyecto aborda el problema que tienen muchas empresas comercializadoras de aceite a la hora de pronosticar el momento más idóneo para la venta de su producto con el fin de mejorar su rentabilidad.
 
-## ¿Quién usará la aplicación?
-Principalmente será una plataforma diseñada para agricultores cuyos cultivos se encuentren en Andalucía.
+## Cuales serían los usuarios/empresas que utilizarían este software
+Empresas productoras y comercializadoras de aceite de oliva (cooperativas oleícolas, almazaras privadas, productores particulares, compradores, agentes comerciales...).
 
-## Solución propuesta
-El cliente especificando un producto que desea cultivar y una región de Andalucía recibe la época del año donde resulta más rentable cultivar ese producto mediante una serie de cálculos que realiza el sistema. El sistema trabajará con informes de historiales de precipitaciones, horas de sol y temperaturas que facilita la Junta de Andalucía y haciendo una serie de cálculos encontrará el equilibrio entre estos tres parámetros para determinar dependiendo del producto cuando es la época del año idónea para llevar a cabo el cultivo del producto.
+## Planteamiento de la solución
+El objetivo de la plataforma es que los usuarios tengan una idea lo más aproximada posible sobre que momento del año puede estar en su nivel más alto el precio del aceite de oliva en origen.
+
+El programa descargará una serie de archivos de la nube para llevar a cabo su predicción. Estos archivos son históricos basados en tablas que recogen los datos de un parámetro deteminado(existencias iniciales, consumo, producción y precipitaciones) en cada mes de un año. Entonces el programa descargará un histórico del año actual de las existencias iniciales, del consumo, de la producción y de las precipitaciones (este parámatro aunque parezca que no pero será importante tenrlo en cuenta ya que influye en la producción de la cosecha) y descargará los mismos históricos pero de los 5/10 años anteriores. A partir de estos documentos el programa comparará los datos (existencias iniciales, consumo, producción y precipitaciones) del año actual con los de años anteriores y a partir de una serie de cálculos obtendrá cual sería el año más parecido al actual y a partir de ahí se basará para realizar su predicción; Esta predicción nos proporcionará en que época/meses del año el coste del aceite de oliva alcanza un mayor precio y por lo tanto sale más rentable su venta.
+Así aunque un mes la predicción de la aplicación pueda ser p.ejemplo: "máx. coste del aceite de oliva se conseguirá en Julio", el mes siguiente la aplicaión puede cambiar su predicción debido a que hayan variado los factores que la aplicación evalúa para producir la predicción (por ejemplo las precipitaciones han aumentado y la producción ha bajado por lo que la situación actual se asemeja a la situción del año 2017(por ejemplo) donde el aceite de oliva alcanzo su máximo coste en Febrero, por lo que la predicción de la aplicación será ahora "máx. coste del aceite de oliva se conseguirá en Febrero").
+
+##En que datos/informes/información se respalda y fundamente la App
+Recabando información de organismos oficiales como el COI (Comité Oleícola Internacional) Ministerio de Agricultura, Consejería de Agricultura, Poolred.

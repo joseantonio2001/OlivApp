@@ -23,15 +23,10 @@ Los usuarios (empresas dedicadas a la producción y venta de aceite a granel, co
 ## En que datos/informes/información se respalda y fundamente la App
 Recabando información de organismos oficiales como el COI (Comité Oleícola Internacional) Ministerio de Agricultura, Consejería de Agricultura, Poolred.
 
-Los datos de existencias iniciales y consumo se obtienen de: 
-	https://www.mapa.gob.es/es/agricultura/temas/producciones-agricolas/aceite-oliva-y-aceituna-mesa/Datos_produccion_movimiento_existencias_AICA.aspx
-	https://www.mapa.gob.es/es/agricultura/temas/producciones-agricolas/informemensualdelasituaciondemercadodelsectordelaceitedeolivayaceitunademesa_julio2022_tcm30-626970.pdf
-	(Boletín del ministerio de agricultura, pesca y alimentación).
-Los datos de historial de precios se obtiene de:
-	https://www.oliva.net/poolred/ErrorPOOL.aspx?TipoError=acceso&ReturnUrl=%2fpoolred%2fVendedor%2fPreciosMediosVendedor.aspx (POOLred es un Sistema de Información en origen del aceite de oliva).
-	PD: Para acceder a los datos de esta web se necesitará una cuenta dada de alta, que poseen las empresas productoras/comercializadoras de aceite de Oliva. A los desarrolladores del proyecto una empresa nos ha facilitado una clave, sin embargo adjuntamos un enlace que hemos creado donde podrás ver todos los datos que nos muestra esta web para validar su credibilidad: https://drive.google.com/drive/folders/1NoHETB7DiNCrkIhI1mxrwzDKXJGJAeNA?usp=sharing
-Los datos de precipitaciones se obtienen de: 
-	https://www.seprem.es/boletin/lluvia.pdf (Boletín del ministerio para la transición ecológica y el reto demográfico).
+-Los datos de existencias iniciales y consumo se obtienen de: https://www.mapa.gob.es/es/agricultura/temas/producciones-agricolas/aceite-oliva-y-aceituna-mesa/Datos_produccion_movimiento_existencias_AICA.aspx , https://www.mapa.gob.es/es/agricultura/temas/producciones-agricolas/informemensualdelasituaciondemercadodelsectordelaceitedeolivayaceitunademesa_julio2022_tcm30-626970.pdf (Boletín del ministerio de agricultura, pesca y alimentación).
+-Los datos de historial de precios se obtiene de: https://www.oliva.net/poolred/ErrorPOOL.aspx?TipoError=acceso&ReturnUrl=%2fpoolred%2fVendedor%2fPreciosMediosVendedor.aspx (POOLred es un Sistema de Información en origen del aceite de oliva).
+PD: Para acceder a los datos de esta web se necesitará una cuenta dada de alta, que poseen las empresas productoras/comercializadoras de aceite de Oliva. A los desarrolladores del proyecto una empresa nos ha facilitado una clave, sin embargo adjuntamos un enlace que hemos creado donde podrás ver todos los datos que nos muestra esta web para validar su credibilidad: https://drive.google.com/drive/folders/1NoHETB7DiNCrkIhI1mxrwzDKXJGJAeNA?usp=sharing
+-Los datos de precipitaciones se obtienen de: https://www.seprem.es/boletin/lluvia.pdf (Boletín del ministerio para la transición ecológica y el reto demográfico).
 	
 Una vez recopilada esta información, un administrador del proyecto a creado archivos por años que consisten en tablas donde se recogen todos estos datos segregados por meses, con el fin de tener los cuatros parámetros (existencias iniciales, producción, precios y precipitaciones) y sus datos en un solo archivo favoreciendo la unificación de datos teniendo asi por ejemplo en el archivo de 2017 los datos de existencias iniciales, producción, historial de precios y precipitaciones y no teniendo para 2017 un archivo Existencias_iniciales_2017, producción_2017, historial_de_precios_2017, precipitaciones_2017. Estas tablas se encontrarán en una base de datos/nube desde la cual el programa obtendrá los datos. Hemos creado un repositorio con estas tablas, puede verlo en este link: https://drive.google.com/drive/folders/1DiNHYz9lYGd2bsPEOehDSwywxTxof0-S?usp=sharing
 	

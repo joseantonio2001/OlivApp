@@ -23,10 +23,12 @@ Los usuarios (empresas dedicadas a la producción y venta de aceite a granel, co
 ## En que datos/informes/información se respalda y fundamente la App
 Recabando información de organismos oficiales como el COI (Comité Oleícola Internacional) Ministerio de Agricultura, Consejería de Agricultura, Poolred.
 
--Los datos de existencias iniciales y consumo se obtienen de: https://www.mapa.gob.es/es/agricultura/temas/producciones-agricolas/aceite-oliva-y-aceituna-mesa/Datos_produccion_movimiento_existencias_AICA.aspx , https://www.mapa.gob.es/es/agricultura/temas/producciones-agricolas/informemensualdelasituaciondemercadodelsectordelaceitedeolivayaceitunademesa_julio2022_tcm30-626970.pdf (Boletín del ministerio de agricultura, pesca y alimentación).
--Los datos de historial de precios se obtiene de: https://www.oliva.net/poolred/ErrorPOOL.aspx?TipoError=acceso&ReturnUrl=%2fpoolred%2fVendedor%2fPreciosMediosVendedor.aspx (POOLred es un Sistema de Información en origen del aceite de oliva).
-PD: Para acceder a los datos de esta web se necesitará una cuenta dada de alta, que poseen las empresas productoras/comercializadoras de aceite de Oliva. A los desarrolladores del proyecto una empresa nos ha facilitado una clave, sin embargo adjuntamos un enlace que hemos creado donde podrás ver todos los datos que nos muestra esta web para validar su credibilidad: https://drive.google.com/drive/folders/1NoHETB7DiNCrkIhI1mxrwzDKXJGJAeNA?usp=sharing
--Los datos de precipitaciones se obtienen de: https://www.seprem.es/boletin/lluvia.pdf (Boletín del ministerio para la transición ecológica y el reto demográfico).
+Los datos de existencias iniciales y consumo se obtienen de: https://www.mapa.gob.es/es/agricultura/temas/producciones-agricolas/aceite-oliva-y-aceituna-mesa/Datos_produccion_movimiento_existencias_AICA.aspx , https://www.mapa.gob.es/es/agricultura/temas/producciones-agricolas/informemensualdelasituaciondemercadodelsectordelaceitedeolivayaceitunademesa_julio2022_tcm30-626970.pdf (Boletín del ministerio de agricultura, pesca y alimentación).
+
+Los datos de historial de precios se obtiene de: https://www.oliva.net/poolred/ErrorPOOL.aspx?TipoError=acceso&ReturnUrl=%2fpoolred%2fVendedor%2fPreciosMediosVendedor.aspx (POOLred es un Sistema de Información en origen del aceite de oliva).
+PD: Para acceder a los datos de esta web se necesitará una cuenta dada de alta, que poseen las empresas productoras/comercializadoras de aceite de Oliva. A los desarrolladores del proyecto una empresa nos ha facilitado una clave, sin embargo adjuntamos un enlace que hemos creado donde podrás ver todos los datos que nos muestra esta web para validar su credibilidad: https://drive.google.com/drive/folders/1NoHETB7DiNCrkIhI1mxrwzDKXJGJAeNA?usp=sharing .
+
+Los datos de precipitaciones se obtienen de: https://www.seprem.es/boletin/lluvia.pdf (Boletín del ministerio para la transición ecológica y el reto demográfico).
 	
 Una vez recopilada esta información, un administrador del proyecto a creado archivos por años que consisten en tablas donde se recogen todos estos datos segregados por meses, con el fin de tener los cuatros parámetros (existencias iniciales, producción, precios y precipitaciones) y sus datos en un solo archivo favoreciendo la unificación de datos teniendo asi por ejemplo en el archivo de 2017 los datos de existencias iniciales, producción, historial de precios y precipitaciones y no teniendo para 2017 un archivo Existencias_iniciales_2017, producción_2017, historial_de_precios_2017, precipitaciones_2017. Estas tablas se encontrarán en una base de datos/nube desde la cual el programa obtendrá los datos. Hemos creado un repositorio con estas tablas, puede verlo en este link: https://drive.google.com/drive/folders/1DiNHYz9lYGd2bsPEOehDSwywxTxof0-S?usp=sharing
 	
@@ -38,13 +40,4 @@ La lógica de negocio de este sistema se basará en la extracción de informaci�
 
 La lógica de negocio que va a utilizar la predicción consistirá en comparar los parámetros del año actual con el de los 5 años anteriores, entonces una vez calculado el año (de los 5 años anetriores) que más se parezca al actual evaluando los parámetros existencias iniciales, producción, precios y precipitaciones, se podrá predecir que al tener unas condiciones similares el precio máximo del aceite de oliva del año actual se obtendrá aproximadamente el mismo mes donde se dió en aquel año con el que comparte condiciones similares.
 
-Haciendo un ejemplo muy simple (solo evaluando el mes de Enero y dos años atrás; El sistema evaluará 5 años atrás y todos los meses hasta el mes que nos encontremos pero por simplicidad realizaremos hasta enero) de como realizaría el sistema los cálculos:
-				2022 (Año Actual)		2021 (precio máx del aceite se alcanzó en Marzo)		2020 (precio máx del aceite se alcanzó en Agosto)
-				Enero				Enero                                                         Enero
-Existencias iniciales		3				2	-> 3 - 2 = 1						5	-> 3 - 5 = 2			//Calculos del valor
-Producción			6				8	-> 6 - 8 = 2						3	-> 6 - 3 = 3			//actual con el de ese año en valor absoluto	
-Precio Aceite de Oliva		8				9	-> 8 - 9 = 1						5	-> 8 - 5 = 3
-Precipitaciones		4				1	-> 4 - 2 = 3						2	-> 4 - 2 = 2	
- 										 = 7								 = 8			//Suma de la diferencia
- Vemos que el año 2021 muestra una menor diferencia con 2022 que 2020 (sus valores tienen una menor diferencia con los valores de 2022 que los de 2020) por lo tanto la predicción del sistema será la siguiente: "Por su similitud con los datos del 2021 en 2022 el precio máximo del aceite de oliva en el mercado se alcanzará aproximadamente en Marzo".
-
+Si consultas este enlace podrás ver un ejemplo sencillo de la lógica que utilizará la predicción: https://drive.google.com/file/d/1Ye4p8LAOxUZfaJZf1GKAvwkFomqLv8VE/view?usp=sharing

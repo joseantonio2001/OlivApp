@@ -1,6 +1,6 @@
 # Historias de usuario
 
-- [HU1] Los usuarios desean tener los datos disponibles y centralizados para obtener los datos que necesiten directamente esècofocando el parámetro(s) a visualizar.
+- [HU1] Los usuarios desean tener los datos disponibles y centralizados para obtener los datos que necesiten directamente especificando el parámetro(s) a visualizar.
 
   - [HU1-1] [Juan Márquez](personas.md#Juan-Márquez) Juan quiere tener los datos organizados y disponibles para poder dedicar el mayor tiempo posible a realizar sus estudios estadísticos y no tener que perder tiempo buscando datos en Internet.
   - [HU1-2] [Ministerio De Agrigultura de España](personas.md#Ministerio-De-Agricultura-de-España) Los trabajadores de este ministerio necesitan tener organizada y accesible la información de "Aceite de oliva y aceituna de mesa" para elaborar sus informes de comercio y producción acerca este sector.

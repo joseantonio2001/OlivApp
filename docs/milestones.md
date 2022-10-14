@@ -1,6 +1,6 @@
 # Milestones
 
-* [[M0] Estructura de datos para organizar información que permite 1."Representar un año concreto" y 2."Definir los parámetros relevantes de ese año( existencias iniciales, evolución de precios, producción y precipitaciones)"](https://github.com/joseantonio2001/OlivApp/milestone/5).
+* [[M0] Módulo conformado por una estructura de datos para organizar información que permite 1."Representar un año concreto" y 2."Definir los parámetros relevantes de ese año( existencias iniciales, evolución de precios, producción y precipitaciones)"](https://github.com/joseantonio2001/OlivApp/milestone/5).
 Esta estructura de datos tendrá la finalidad de representar cada uno de los años que van a ser analizados (año actual, y los 5 años anteriores), incluyendo nombre(que será el año; p.ej: "2022") y datos relevantes( evolucion de precios, existencias iniciales, producción y precipitaciones, ...)
 
 * [[M1] Módulo compuesto por una serie de métodos que producen una predicción la cual estima en que momento del año el aceite de oliva obtendrá su mayor precio en el mercado (Lógica de Negocio).](https://github.com/joseantonio2001/OlivApp/milestone/6)

@@ -3,12 +3,19 @@
 * [[M0] Clase para organizar información que permite 1."Representar un año concreto" y 2."Definir los parámetros relevantes de ese año( existencias iniciales, evolución de precios, producción y precipitaciones)"](https://github.com/joseantonio2001/OlivApp/milestone/5).
 Esta clase tendrá la finalidad de representar cada uno de los años que van a ser analizados (año actual, y los 5 años anteriores), incluyendo nombre(que será el año; p.ej: "2022") y datos relevantes( evolucion de precios, existencias iniciales, producción y precipitaciones, ...). Así la representación de la clase quedaría como(prototipo):
 
+
 	class Ano:
+	
 		name;				(string)  //P.ej: "2022"
+		
 		EvolucionDePrecios[];		(double)
-		ExistenciasIniciales[];	(double)
+		
+		ExistenciasIniciales[];		(double)
+		
 		Producción[];			(double)
+		
 		Precipitaciones[];		(double)
+		
 		....
 
 El tamaño de los vectores que vemos será 12, que es el número de meses del año y por lo tanto cada componente del vector contendrá un valor correspondiente a un mes del año(p.ej: Producción[0] contrendra el valor de la producción en el mes de Enero).

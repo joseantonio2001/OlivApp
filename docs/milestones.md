@@ -22,6 +22,7 @@ Esta clase tendrá la finalidad de representar cada uno de los años que van a s
 El tamaño de los vectores que vemos será 12, que es el número de meses del año y por lo tanto cada componente del vector contendrá un valor correspondiente a un mes del año(p.ej: Producción[0] contrendra el valor de la producción en el mes de Enero).
 
 
+
 * [[M1] Módulo compuesto por una serie de métodos que producen una predicción la cual estima en que momento del año el aceite de oliva obtendrá su mayor precio en el mercado (Lógica de Negocio).](https://github.com/joseantonio2001/OlivApp/milestone/6)
 A partir de los datos de cada año, y contrastando las características de los años anteriores con el año actual determinar cuales son los meses más rentables para el usuario para vender su aceite.
 

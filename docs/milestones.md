@@ -8,7 +8,6 @@ Esta clase tendrá la finalidad de representar cada uno de los años que van a s
 	class Ano:
 	
 		name;				(string)  //P.ej: "2022"
-		
 		EvolucionDePrecios[];		(double)
 		
 		ExistenciasIniciales[];		(double)

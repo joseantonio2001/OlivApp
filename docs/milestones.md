@@ -4,7 +4,9 @@
 Esta clase tendrá la finalidad de representar cada uno de los años que van a ser analizados (año actual, y los 5 años anteriores), incluyendo nombre(que será el año; p.ej: "2022") y datos relevantes( evolucion de precios, existencias iniciales, producción y precipitaciones, ...). Así la representación de la clase quedaría como(prototipo):
 
 
+
 	class Ano:
+	
 		name;				(string)  //P.ej: "2022"
 		
 		EvolucionDePrecios[];		(double)

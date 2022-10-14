@@ -7,17 +7,17 @@ Esta clase tendrá la finalidad de representar cada uno de los años que van a s
 
 		class Ano:
 	
-		name;				(string)  //P.ej: "2022"
+			name;				(string)  //P.ej: "2022"
 		
-		EvolucionDePrecios[];		(double)
+			EvolucionDePrecios[];		(double)
 		
-		ExistenciasIniciales[];		(double)
-		
-		Producción[];			(double)
-		
-		Precipitaciones[];		(double)
-		
-		....
+			ExistenciasIniciales[];		(double)
+
+			Producción[];			(double)
+
+			Precipitaciones[];		(double)
+
+			....
 
 		El tamaño de los vectores que vemos será 12, que es el número de meses del año y por lo tanto cada componente del vector contendrá un valor correspondiente a un mes del año(p.ej: Producción[0] contrendra el valor de la producción en el mes de Enero).
 

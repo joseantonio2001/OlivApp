@@ -6,7 +6,7 @@ Esta estructura de datos tendrá la finalidad de representar cada uno de los añ
 * [[M1] Módulo compuesto por una serie de métodos que producen una predicción la cual estima en que momento del año el aceite de oliva obtendrá su mayor precio en el mercado (Lógica de Negocio).](https://github.com/joseantonio2001/OlivApp/milestone/6)
 A partir de los datos de cada año, y contrastando las características de los años anteriores con el año actual determinar cuales son los meses más rentables para el usuario para vender su aceite.
 
-* [[M2] Módulo conformado por un conjunto de métodos que genere un informe a partir de a predicción obtenida.](https://github.com/joseantonio2001/OlivApp/milestone/7)
+* [[M2] Módulo conformado por un conjunto de métodos que genera un informe a partir de a predicción obtenida.](https://github.com/joseantonio2001/OlivApp/milestone/7)
 A partir de la predicción obtenida en M1, componer un infome formado:
 	1. Tabla donde se reflejen los datos disponibles hasta ahora de existencias iniciales, precio del aceite en el mrecado, producción y precipitaciones seccionado por meses del año actual.
 	2. Los dos meses del año donde se prevee que el aceite de oliva alcanzará su mejor precio en el mercado. 

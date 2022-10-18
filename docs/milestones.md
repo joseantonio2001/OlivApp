@@ -1,16 +1,13 @@
 # Milestones
 
-* [[M0] Módulo conformado por clases y métodos necesarios para organizar información que permite 1."Representar un año concreto" y 2."Definir los parámetros relevantes de ese año( existencias iniciales, evolución de precios, producción y precipitaciones)"](https://github.com/joseantonio2001/OlivApp/milestone/5).
-Este módulo tendrá la finalidad de representar cada uno de los años que van a ser analizados (año actual, y los 5 años anteriores), incluyendo nombre(que será el año; p.ej: "2022") y datos relevantes( evolucion de precios, existencias iniciales, producción y precipitaciones, ...).
+## [[M0] Fichero que contiene la estructura de datos para almacenar  los años que se van a evaluar."](https://github.com/joseantonio2001/OlivApp/milestone/5).
+Necesitamos una estructura de datos para almacenar los años que se van a analizar, incluyendo el nick del año (p.ej: 2022) y características evaluables de cara al análisis de un año (existencias iniciales, producción, precio actual y precipitaciones actusles). El principal objetivo de este milestone es tener un fichero que almacene los años (tomados como objeto de estudio para la elaboración de la predicción de cuando el aceite de oliva obtendrá su mayoer precio de mercado) con sus atributos. 
 
-* [[M1] Módulo compuesto por una serie de métodos que producen una predicción la cual estima en que momento del año el aceite de oliva obtendrá su mayor precio en el mercado (Lógica de Negocio).](https://github.com/joseantonio2001/OlivApp/milestone/6)
-A partir de los datos de cada año, y contrastando las características de los años anteriores con el año actual determinar cuales son los meses más rentables para el usuario para vender su aceite.
+## [[M1] Biblioteca para obtener los datos de los años a analizar.](https://github.com/joseantonio2001/OlivApp/milestone/6)
+Librería compuesta por métodos útiles para extraer  información de fuentes externas sobre los años que se van a analizar  y almacenarlos en la estructura de datos correspondiente.	
 
-* [[M2] Módulo conformado por un conjunto de métodos que genera un informe a partir de a predicción obtenida.](https://github.com/joseantonio2001/OlivApp/milestone/7)
-A partir de la predicción obtenida en M1, componer un infome formado:
-	1. Tabla donde se reflejen los datos disponibles hasta ahora de existencias iniciales, precio del aceite en el mrecado, producción y precipitaciones seccionado por meses del año actual.
-	2. Los dos meses del año donde se prevee que el aceite de oliva alcanzará su mejor precio en el mercado. 
-	3. Los dos meses del año donde se prevee que el aceite de oliva alcanzará su peor precio en el mercado. 
-	
-	Ejemplo de como podría ser el informe generado: https://drive.google.com/file/d/1idDfQDB7NOpMbQGNFVx2Icz1zLaCOOoy/view?usp=sharing
+## [[M2] Módulo que nos permita generar una predicción del mes/meses en el que el aceite de oliva alcanzará su mayor precio en el mercado a partir de los años de análisis previamente almacenados(Implementación de la lógica de negocio).](https://github.com/joseantonio2001/OlivApp/milestone/7)
+Implementación de un módulo que nos permita a partir de los datos de cada año, y contrastando las características de los años anteriores con el año actual determinar cuales son los meses más rentables para el usuario para vender su aceite , es decir, en que mes/meses el aceite de oliva alcanzará su mayor precio en el mercado(lógica de negocio).
 
+## [[M3] Implementanción de la interfaz de la aplicación.](https://github.com/joseantonio2001/OlivApp/milestone/7)
+Diseño e implementación de una interfaz legible y visual que permita al usuario visualizar la información resultante de la predicción implementada en el M2.

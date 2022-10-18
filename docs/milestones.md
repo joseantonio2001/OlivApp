@@ -1,6 +1,6 @@
 # Milestones
 
-## [[M0] Fichero que contiene la estructura de datos para almacenar  los años que se van a evaluar"](https://github.com/joseantonio2001/OlivApp/milestone/5).
+## [[M0] Fichero que contiene la estructura de datos para almacenar  los años que se van a evaluar](https://github.com/joseantonio2001/OlivApp/milestone/5).
 Necesitamos una estructura de datos para almacenar los años que se van a analizar, incluyendo el nick del año (p.ej: 2022) y características evaluables de cara al análisis de un año (existencias iniciales, producción, precio actual y precipitaciones actusles). El principal objetivo de este milestone es tener un fichero que almacene los años (tomados como objeto de estudio para la elaboración de la predicción de cuando el aceite de oliva obtendrá su mayoer precio de mercado) con sus atributos. 
 
 ## [[M1] Biblioteca para obtener los datos de los años a analizar.](https://github.com/joseantonio2001/OlivApp/milestone/6)

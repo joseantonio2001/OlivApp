@@ -1,13 +1,7 @@
 # Milestones
 
-## [[M0] Fichero que contiene la estructura de datos para almacenar  los años que se van a evaluar](https://github.com/joseantonio2001/OlivApp/milestone/5).
-Necesitamos una estructura de datos para almacenar los años que se van a analizar, incluyendo el nick del año (p.ej: 2022) y características evaluables de cara al análisis de un año (existencias iniciales, producción, precio actual y precipitaciones actusles). El principal objetivo de este milestone es tener un fichero que almacene los años (tomados como objeto de estudio para la elaboración de la predicción de cuando el aceite de oliva obtendrá su mayoer precio de mercado) con sus atributos. 
+## [[M0] Implementación del modelo de datos.](https://github.com/joseantonio2001/OlivApp/milestone/5).
+Diseño e implementación de un modelo de datos en el que tendremos los años objeto de estudio, junto con sus datos.
 
-## [[M1] Biblioteca para obtener los datos de los años a analizar.](https://github.com/joseantonio2001/OlivApp/milestone/6)
-Librería compuesta por métodos útiles para extraer  información de fuentes externas sobre los años que se van a analizar  y almacenarlos en la estructura de datos correspondiente.	
-
-## [[M2] Módulo que nos permita generar una predicción del mes/meses en el que el aceite de oliva alcanzará su mayor precio en el mercado a partir de los años de análisis previamente almacenados(Implementación de la lógica de negocio).](https://github.com/joseantonio2001/OlivApp/milestone/7)
-Implementación de un módulo que nos permita a partir de los datos de cada año, y contrastando las características de los años anteriores con el año actual, determinar cuales son los meses más rentables para el usuario para vender su aceite, es decir, en que mes/meses el aceite de oliva alcanzará su mayor precio en el mercado(lógica de negocio).
-
-## [[M3] Implementanción de la interfaz de la aplicación.](https://github.com/joseantonio2001/OlivApp/milestone/8)
-Diseño e implementación de una interfaz legible y visual que permita al usuario visualizar la información resultante de la predicción implementada en el M2.
+## [[M1] Implenentación de la lógica de negocio.](https://github.com/joseantonio2001/OlivApp/milestone/6)
+Diseño e implementación del sistema de previsión del máximo precio del aceite de Oliva (funcionalidad de [HU1](https://github.com/joseantonio2001/OlivApp/blob/Objetivo-1/docs/historias-usuario.md)). A partir del modelo de datos (M1) se implementará un sistema capaz de generar una predicción que nos aproximará los meses en el que el aceite de oliva alcanzará un mayor precio en el mercado, es decir, se implementará la funcionalidad que nos requiere el cliente.

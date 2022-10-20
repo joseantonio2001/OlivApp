@@ -1,6 +1,6 @@
 # Milestones
 
-## [[M0] Implementación del modelo de datos](https://github.com/joseantonio2001/OlivApp/milestone/5).
+## [[M0] Implementación del modelo de datos.](https://github.com/joseantonio2001/OlivApp/milestone/5)
 Diseño e implementación de un modelo de datos en el que tendremos los años objeto de estudio, junto con sus datos.
 
 ## [[M1] Implenentación de la lógica de negocio.](https://github.com/joseantonio2001/OlivApp/milestone/6)

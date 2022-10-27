@@ -1,6 +1,5 @@
 lenguaje: python 3.10
 
-entidad: models/predictor.py
+entidad: [models/predictor.py, models/cosecha_actual.py]
 
-objeto: models/cosecha_actual.py
 

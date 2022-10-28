@@ -3,6 +3,7 @@
 from enum import Enum
 
 
+# Enumerado que representa los meses del año
 class Mes(Enum):
     ENERO = 0
     FEBRERO = 1

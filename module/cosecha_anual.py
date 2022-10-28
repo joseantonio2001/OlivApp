@@ -7,6 +7,8 @@ from .meses import Mes
 class CosechaAnual:
     """Clase para representar los datos recogidos sobre la cosecha de un año"""
 
+    __year: int
+
     __evolucion_precios: dict
     __produccion: dict
     __precipitaciones: dict
@@ -16,7 +18,7 @@ class CosechaAnual:
     __mes_precio_maximo: Mes
     __meses_evaluables: Mes
 
-
+    # Constructor personalizado para generar el objeto en base a datos en fichero
     def __init__(self, input_file: str):
 
         self.__evolucion_precios = dict()
@@ -25,19 +27,24 @@ class CosechaAnual:
         self.__existencias_iniciales = dict()
 
         with open(input_file, 'r') as f:
-            for linea in f.readlines():
+            lineas = f.readlines()
 
-                valores = linea.split(' ')
-                mes = (Mes[valores[0]]).name
-                precio_mes = valores[1]
-                produccion = valores[2]
-                precipitacion  = valores[3]
-                existencias_iniciales = valores[4]
+        self.__year = int(lineas[0])
 
-                self.__evolucion_precios[mes] = precio_mes
-                self.__produccion[mes] = produccion
-                self.__precipitaciones[mes] = precipitacion
-                self.__existencias_iniciales[mes] = existencias_iniciales
+
+        for linea in lineas [3:]:
+
+            valores = linea.split(' ')
+            mes = (Mes[valores[0]]).name
+            precio_mes = valores[1]
+            produccion = valores[2]
+            precipitacion  = valores[3]
+            existencias_iniciales = valores[4]
+
+            self.__evolucion_precios[mes] = precio_mes
+            self.__produccion[mes] = produccion
+            self.__precipitaciones[mes] = precipitacion
+            self.__existencias_iniciales[mes] = existencias_iniciales
 
         self.__precio_maximo = max(self.__evolucion_precios.values())
         mes_max = [k for k, v in self.__evolucion_precios.items() if v == self.__precio_maximo][0]

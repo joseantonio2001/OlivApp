@@ -22,7 +22,7 @@ class Predictor():
         continue
 
     def cargar_prediccion(self):
-        input_file = f'prediccion_{self.year}.txt'
+        input_file = f'prediccion_{self.year}.csv'
         self.cosecha_pred = CosechaAnual(input_file)
 
     def cargar_prediccion(self, input_file: str):

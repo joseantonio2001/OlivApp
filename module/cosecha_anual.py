@@ -34,7 +34,7 @@ class CosechaAnual:
 
         for linea in lineas [3:]:
 
-            valores = linea.split(' ')
+            valores = linea.split(',')
             mes = (Mes[valores[0]]).name
             precio_mes = valores[1]
             produccion = valores[2]

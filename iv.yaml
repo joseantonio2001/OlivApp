@@ -1,3 +1,6 @@
 lenguaje: python-3.10
-entidad: [models/predictor.py, models/cosecha_actual.py]
+
+entidad: 
+  - models/predictor.py
+  -  models/cosecha_actual.py
 

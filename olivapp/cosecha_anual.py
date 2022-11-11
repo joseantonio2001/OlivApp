@@ -17,5 +17,5 @@ class CosechaAnual:
     # Datos anuales
     precio_max: float
     mes_precio_max: Mes
-    meses_evalables: Mes
+    meses_evaluables: Mes
  

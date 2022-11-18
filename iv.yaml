@@ -3,3 +3,6 @@ lenguaje: python-3.10
 entidad: 
   - models/predictor.py
 
+automatizar:
+  fichero: tasks.py
+  orden: invoke

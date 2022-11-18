@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "olivapp"
+version = "0.0.3"
+description = "Gestor de dependencias para OlivApp project"
+authors = ["José Antonio <joseantonio2001>"]
+license = "GPL-3.0 license"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

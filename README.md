@@ -38,3 +38,13 @@ La lógica de negocio de este sistema se basará en la extracción de informaci�
 La lógica de negocio que va a utilizar la predicción consistirá en comparar los parámetros del año actual con el de los 5 años anteriores, entonces una vez calculado el año (de los 5 años anteriores) que más se parezca al actual evaluando los parámetros existencias iniciales, producción, precios y precipitaciones, se podrá predecir que al tener unas condiciones similares el precio máximo del aceite de oliva del año actual se obtendrá aproximadamente el mismo mes donde se dió en aquel año con el que comparte condiciones similares.
 
 Si consultas este enlace podrás ver un ejemplo sencillo de la lógica que utilizará la predicción: https://drive.google.com/file/d/1Ye4p8LAOxUZfaJZf1GKAvwkFomqLv8VE/view?usp=sharing
+
+## Herramientas de desarrollo
+
+ - Gestor de dependencias: [poetry](https://github.com/joseantonio2001/OlivApp/issues/21)
+
+ - Task runner: [invoke](https://github.com/joseantonio2001/OlivApp/issues/22)
+ 
+ Se han desarrollado dos tareas installPoetry y check en el fichero tasks.py que permiten instalar poetry y comprobar la correcta sintaxis de los fuente situados en /olivapp
+ 	- **invoke poetryInstall** e **invoke check**:
+	![image](https://user-images.githubusercontent.com/85243896/202788297-5ecb3901-381d-4b2f-9f70-7feaabe2afd6.png)

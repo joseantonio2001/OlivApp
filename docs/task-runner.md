@@ -24,4 +24,4 @@ Ajustandome a los criterios redactados en el apartado anterior he analizado los 
 Para el proyecto que se está desarrollando se optado por **Invoke** como el task runner más adecuado.
 
 ## ¿Pórque Invoke?
-Invoke se ajusta a los criterios de elección defindos. Además Invoke se considera un proyecto activo (en continuo desarrollo), con constantes actualizaciones; Por último al resultar el task runner más popular para python, brinda de abundante documentación en información en foros que facilitarán la comprensión del funcionamiento de la herramienta. 
+Invoke se ajusta a los criterios de elección defindos. Además Invoke se considera un proyecto activo (en continuo desarrollo), con constantes actualizaciones; Por último al resultar el task runner más popular para python, brinda de abundante documentación e información en foros, que facilitará la comprensión del funcionamiento de la herramienta. 

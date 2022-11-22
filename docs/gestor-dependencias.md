@@ -22,14 +22,16 @@ Ajustandome a los criterios redactados en el apartado anterior he analizado los 
 
 | Gestor de dependencias    | fichero de dependencias    | fichero .lock | Observaciones                                                                                           |
 |---------------------------|----------------------------|---------------|---------------------------------------------------------------------------------------------------------|
-| Pipenv                    | Pipfile                    | Pipfile.lock  | Instalaciones lentas                                                                                    |
+| Pipenv                    | Pipfile                    | Pipfile.lock  | Instalaciones lentas; No usa pyproject.toml                                                             |
 | Poetry                    | pyproject.toml             | poetry.lock   | Buen rendimiento (> rendimiento que Pipenv)                                                             |
-| Hatch                     | pyproject.toml             |       -       | Funciona junto con conda para ayudar a instalar dependencias. Más difícil de entender su funcionamiento |
+| Hatch                     | pyproject.toml             |       ✓       | Funciona junto con conda para ayudar a instalar dependencias. Más difícil de entender su funcionamiento |
 
 Para el proyecto que se está desarrollando se optado por **Poetry** como el gestor de dependencias más adecuado.
 
 ## ¿Pórque Poetry?
 
 El motivo principal es que esta herramienta se ajusta perfectamente al estándar PEP 518. Además brinda de gran cantidad de documentaión de calidad que facilita el aprendizaje de la herramienta, presenta un buen rendimiento, con gran velocidad de instalación y resultando una herramienta ágil y con esta herramienta no tienes que preocuparte por el entorno virtual.
+
+    
 
     

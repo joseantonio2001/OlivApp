@@ -50,5 +50,5 @@ Si consultas este enlace podrás ver un ejemplo sencillo de la lógica que utili
  	- **poe poetryInstall** e **poe check**:
 
 
-	![check](CORRECTO_FUNCIONAMIENTO.png)
+	![check](![CORRECTO_FUNCIONAMIENTO](https://user-images.githubusercontent.com/85243896/203501666-1e78ac6e-4fcf-42c2-9ac9-a2191da77bf3.png))
 

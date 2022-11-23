@@ -4,5 +4,5 @@ entidad:
   - models/predictor.py
 
 automatizar:
-  fichero: tasks.py
-  orden: invoke
+  fichero: pyproject.toml
+  orden: poe

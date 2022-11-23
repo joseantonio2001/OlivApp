@@ -43,12 +43,12 @@ Si consultas este enlace podrás ver un ejemplo sencillo de la lógica que utili
 
  - Gestor de dependencias: [poetry](https://github.com/joseantonio2001/OlivApp/issues/21)
 
- - Task runner: [invoke](https://github.com/joseantonio2001/OlivApp/issues/22)
+ - Task runner: [PoethePoet](https://github.com/joseantonio2001/OlivApp/issues/22)
  
  
  	Se han desarrollado dos tareas installPoetry y check en el fichero tasks.py que permiten instalar poetry y comprobar la correcta sintaxis de los fuente situados en /olivapp
- 	- **invoke poetryInstall** e **invoke check**:
+ 	- **poe poetryInstall** e **poe check**:
 
 
-	![check](https://user-images.githubusercontent.com/85243896/202788763-88548ce0-7f7d-43bf-9318-ffaae79aa019.png)
+	![check](CORRECTO_FUNCIONAMIENTO.png)
 

@@ -9,6 +9,13 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.8"
 
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.16.4"
+
+[tool.poe.tasks]
+installPoetry = "poetry install"
+check = "python3.8 -m compileall olivapp/"
+
 
 [build-system]
 requires = ["poetry-core"]

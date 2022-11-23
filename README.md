@@ -46,9 +46,9 @@ Si consultas este enlace podrás ver un ejemplo sencillo de la lógica que utili
  - Task runner: [PoethePoet](https://github.com/joseantonio2001/OlivApp/issues/22)
  
  
- 	Se han desarrollado dos tareas installPoetry y check en el fichero tasks.py que permiten instalar poetry y comprobar la correcta sintaxis de los fuente situados en /olivapp
+ 	Se han desarrollado dos tareas, installPoetry y check en el fichero pyproject.toml que permiten instalar poetry y comprobar la correcta sintaxis de los fuente situados en /olivapp:
  	- **poe poetryInstall** e **poe check**:
 
 
-	![check](![CORRECTO_FUNCIONAMIENTO](https://user-images.githubusercontent.com/85243896/203501666-1e78ac6e-4fcf-42c2-9ac9-a2191da77bf3.png))
+	![CORRECTO_FUNCIONAMIENTO](https://user-images.githubusercontent.com/85243896/203502509-07ebc861-a752-4101-a044-d8b12ef543d2.png)
 

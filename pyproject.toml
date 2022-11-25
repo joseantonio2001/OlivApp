@@ -14,6 +14,7 @@ poethepoet = "^0.16.4"
 
 [tool.poe.tasks]
 installPoetry = "poetry install"
+installGdown = "pip install gdown"
 check = "python3.8 -m compileall olivapp/"
 
 

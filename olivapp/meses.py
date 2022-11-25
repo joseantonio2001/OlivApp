@@ -11,7 +11,7 @@ class Mes(Enum):
     MAYO = 4
     JUNIO = 5
     JULIO = 6
-    AGOSOSTO = 7
+    AGOSTO = 7
     SEPTIEMBRE = 8
     OCTUBRE = 9
     NOVIEMBRE = 10

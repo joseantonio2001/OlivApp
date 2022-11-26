@@ -30,7 +30,7 @@ class CosechaAnual:
         self.__precio_maximo = float()
 
 
-        with open(input_file, 'r') as f:
+        with open('./informes/'+input_file, 'r') as f:
             
             lineas = f.readlines()
             
@@ -49,21 +49,15 @@ class CosechaAnual:
             self.__evolucion_precios[mes] = precio_mes
             self.__existencias_iniciales[mes] = existencias_iniciales
             self.__produccion[mes] = produccion
-   
 
-        for m in Mes:
+            if self.__evolucion_precios[mes] != 's/c':
+                self.__meses_evaluables = mes
 
-            if self.__evolucion_precios[m.name] != 's/c':
-                self.__meses_evaluables = m.name
+                if(self.__precio_maximo < float(self.__evolucion_precios[mes])):
+                   self.__precio_maximo = float(self.__evolucion_precios[mes])
+                   self.__mes_precio_maximo = mes
 
-                if(self.__precio_maximo < float(self.__evolucion_precios[m.name])):
-                   self.__precio_maximo = float(self.__evolucion_precios[m.name])
-                   self.__mes_precio_maximo = m.name
-            
-            else:
-                break
-                
-        
+
     
     def get_evolucion_precios(self) -> dict:
         return self.__evolucion_precios

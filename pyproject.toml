@@ -8,6 +8,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
+pytest = "^4.6.9"
+assertpy = "^1.1"
+gdown = "^4.5.4"
 
 [tool.poetry.group.dev.dependencies]
 poethepoet = "^0.16.4"

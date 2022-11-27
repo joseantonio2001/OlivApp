@@ -19,7 +19,7 @@ installAssertpy = "pip install assertpy"
 check = "python3.8 -m compileall olivapp/"
 installGdown = "pip install gdown"
 getInformes ="gdown --folder 1WzypEZh_fa3ZNmTZ4_KMfGVAbuBO95xR -O informes"
-test = "pytest"
+test = "pytest-3"
 
 [build-system]
 requires = ["poetry-core"]

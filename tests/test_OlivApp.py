@@ -3,6 +3,7 @@ from assertpy import assert_that
 import os
 
 from olivapp.cosecha_anual import CosechaAnual
+from olivapp.preditor import Predictor
 
 def test_informes():
 
@@ -33,3 +34,23 @@ def test_CosechaAnualBuilder():
     assert_that(ano.get_existencias_iniciales()['ENERO']).is_equal_to(datosAno[2])
     assert_that(ano.get_produccion()['ENERO']).is_equal_to(datosAno[3])
     assert_that(ano.get_precipitaciones()['ENERO']).is_equal_to(datosAno[4])
+
+
+def test_PredictorBuilder():
+    informesFiles = os.popen("ls ./informes/").read()
+    informNames = informesFiles.split('\n')
+
+    cosechas_anteriores=[]
+    for i in range(len(informNames)-1):
+        if i < len(informNames)-2:
+            cosechas_anteriores.append(CosechaAnual(informNames[i]))
+        else:
+            cosecha_actual = CosechaAnual(informNames[i])
+
+    prediccion = Predictor(cosechas_anteriores, cosecha_actual)
+    
+    assert_that(prediccion).is_not_none()
+    assert_that(prediccion.get_cosecha_actual()).is_instance_of(CosechaAnual)
+    assert_that(prediccion.get_cosechas_anteriores()).is_type_of(list)
+    for cosecha in prediccion.get_cosechas_anteriores():
+        assert_that(cosecha).is_instance_of(CosechaAnual) 

@@ -49,6 +49,7 @@ class CosechaAnual:
             self.__evolucion_precios[mes] = precio_mes
             self.__existencias_iniciales[mes] = existencias_iniciales
             self.__produccion[mes] = produccion
+            self.__precipitaciones[mes] = precipitacion 
 
             if self.__evolucion_precios[mes] != 's/c':
                 self.__meses_evaluables = mes

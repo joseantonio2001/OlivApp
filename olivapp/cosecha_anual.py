@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 from dataclasses import dataclass
-from meses import Mes
+from .meses import Mes
 
 #@dataclass(frozen=True)
 class CosechaAnual:

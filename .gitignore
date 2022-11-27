@@ -1,2 +1,3 @@
-olivapp/__pycache__/
+*/__pycache__/*
 olivapp/meses.pyc
+*/*__init__*

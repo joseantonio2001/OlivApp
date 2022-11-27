@@ -59,7 +59,10 @@ class CosechaAnual:
                    self.__mes_precio_maximo = mes
 
 
-    
+    def get_anio(self) -> int:
+        return self.__year
+
+
     def get_evolucion_precios(self) -> dict:
         return self.__evolucion_precios
     

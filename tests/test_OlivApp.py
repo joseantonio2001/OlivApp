@@ -11,7 +11,7 @@ def test_informes():
     informesDirect = os.popen("ls").read()
     assert_that(informesDirect).contains('informes')
 
-    informesFiles = os.popen("ls ./informes/*").read()
+    informesFiles = os.popen("ls ./informes/").read()
     assert_that(informesFiles).is_not_empty()
     
 
@@ -25,7 +25,6 @@ def test_CosechaAnualBuilder():
     valor_ano = informesFiles.split('.')
 
     assert_that(int(valor_ano[0])).is_equal_to(ano.get_anio())
-
 
     informesDirect = os.popen("cat ./informes/" + infome[0] + ' | grep enero').read()
     datosAno = informesDirect.split(',') #[0] -> Mes, [1] -> Precio, [2] -> Existencias Inic., [3] -> Producción, [4] -> Precipitaciones

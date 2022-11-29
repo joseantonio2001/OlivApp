@@ -36,7 +36,9 @@ def test_CosechaAnualBuilder():
     assert_that(ano.get_precipitaciones()['ENERO']).is_equal_to(datosAno[4])
 
 
-def test_PredictorBuilder():
+@pytest.fixture
+def build_Predictor():
+
     informesFiles = os.popen("ls ./informes/").read()
     informNames = informesFiles.split('\n')
 
@@ -47,10 +49,35 @@ def test_PredictorBuilder():
         else:
             cosecha_actual = CosechaAnual(informNames[i])
 
-    prediccion = Predictor(cosechas_anteriores, cosecha_actual)
+    return Predictor(cosechas_anteriores, cosecha_actual)
+
+
+def test_PredictorBuilder(build_Predictor):
+
+    prediccion = build_Predictor
     
     assert_that(prediccion).is_not_none()
     assert_that(prediccion.get_cosecha_actual()).is_instance_of(CosechaAnual)
     assert_that(prediccion.get_cosechas_anteriores()).is_type_of(list)
     for cosecha in prediccion.get_cosechas_anteriores():
         assert_that(cosecha).is_instance_of(CosechaAnual) 
+
+
+def test_Prediction(build_Predictor):
+
+    prediccion = build_Predictor
+
+    year_comparate = prediccion.get_prediction().split('datos de la campaña de ')[1].split(' ')[0]
+
+    year_prediction = CosechaAnual
+    for i in range(len(prediccion.get_cosechas_anteriores())):
+        if prediccion.get_cosechas_anteriores()[i].get_anio() == int(year_comparate):
+            if prediccion.get_cosechas_anteriores()[i].get_anio() == prediccion.get_cosechas_anteriores()[len(prediccion.get_cosechas_anteriores())-1].get_anio():
+                year_prediction = prediccion.get_cosecha_actual()
+            else:
+                year_prediction = prediccion.get_cosechas_anteriores()[i+1]
+            break
+
+    mes_prediction = prediccion.get_prediction().split('mercado en el mes de ')[1].split('\n')[0]
+
+    assert_that(year_prediction.get_mes_prec_máx()).is_equal_to(mes_prediction)

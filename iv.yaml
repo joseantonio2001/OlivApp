@@ -7,5 +7,4 @@ automatizar:
   fichero: pyproject.toml
   orden: poe
 
-test:
- - tests/test_OlivApp.py
+test: tests/test_OlivApp.py

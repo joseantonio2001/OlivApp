@@ -9,3 +9,4 @@ automatizar:
 
 test:
   - tests/test_OlivApp.py
+  

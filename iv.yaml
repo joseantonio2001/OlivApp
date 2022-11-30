@@ -1,11 +1,8 @@
 lenguaje: python-3.10
-
 entidad: 
   - models/predictor.py
-
 automatizar:
   fichero: pyproject.toml
   orden: poe
-
 test:
   - tests/test_OlivApp.py

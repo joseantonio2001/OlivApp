@@ -55,3 +55,10 @@ Si consultas este enlace podrás ver un ejemplo sencillo de la lógica que utili
  - Test runner: [Pytest](https://github.com/joseantonio2001/OlivApp/issues/24)
 
  - Assertion Library: [assertpy](https://github.com/joseantonio2001/OlivApp/issues/25)
+
+	
+
+	Se han desarrollado 4 tests para verificar el correcto funcionamiento sel código implementado; Para ejecutarlos usaremos la orden **poe test**:
+	![verificacion test](https://user-images.githubusercontent.com/85243896/204771235-25f6efe6-4ecb-4f71-a79f-a5674a8ffce2.png)
+
+	

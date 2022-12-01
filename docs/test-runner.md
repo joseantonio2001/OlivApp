@@ -4,7 +4,7 @@ El primer paso para poder testear el código de nuestro proyecto es disponer de 
 
 ## Criterios de elección
 
-Para la elección de nuestro test runner vamos ayudarnos de la información que nos ofrece [synk Advisor](https://snyk.io/advisor/python). La elección del test runner se basará principalmente en:
+Para la elección de nuestro test runner vamos ayudarnos de la información que nos ofrece [snyk Advisor](https://snyk.io/advisor/python). La elección del test runner se basará principalmente en:
 
  - Rendimiento: necesitamos un testing framework rápido, que no entorpezca el workflow del proyecto a la hora de realizar los test.
 

@@ -4,7 +4,7 @@ Una vez seleccionada el test-runner para gestionar los test (__pytest__), necesi
 
 ## Criterios de elección
 
-Para la elección de nuestra librería de aserciones vamos ayudarnos de la información que nos ofrece [synk Advisor](https://snyk.io/advisor/python). La elección de la librería de aserciones se basará principalmente en:
+Para la elección de nuestra librería de aserciones vamos ayudarnos de la información que nos ofrece [snyk Advisor](https://snyk.io/advisor/python). La elección de la librería de aserciones se basará principalmente en:
 
  - Rendimiento: ejecución rápida de los test y de forma sencilla.
 

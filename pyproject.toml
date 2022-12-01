@@ -7,7 +7,7 @@ license = "GPL-3.0 license"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 pytest = "^4.6.9"
 assertpy = "^1.1"
 gdown = "^4.5.4"

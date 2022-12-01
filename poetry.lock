@@ -290,8 +290,8 @@ python-versions = "*"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.8"
-content-hash = "2eb10a7123e781415e4ca938d9ac47b327d72add6fb51aee1fe6cc2b8fcc86f6"
+python-versions = "^3.10"
+content-hash = "7318ece5500e39c86058a95a9f7b5d44f69542bbfce5c77638c6c1f9aeb3f933"
 
 [metadata.files]
 assertpy = [

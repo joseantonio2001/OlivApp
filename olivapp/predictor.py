@@ -8,8 +8,8 @@ class Predictor:
 
     year: int
             
-    cosechas_anteriores: list[CosechaAnual]
-    cosecha_pred: CosechaAnual = None
+    cosechas_anteriores: list
+    cosecha_actual: CosechaAnual = None
 
     # Constructor personalizado para cargar las cosechas
     def __init__(self, cosechas_anteriores: list, cosecha_actual: CosechaAnual):

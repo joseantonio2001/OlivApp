@@ -2,12 +2,12 @@ import pytest
 from assertpy import assert_that
 import os
 
-from olivapp.cosecha_anual import CosechaAnual
+from olivapp.cosecha_anual import CosechaAnual, CosechaAnual_init
 from olivapp.preditor import Predictor
 
 def test_informes():
 
-    os.system('poe getInformes')
+    os.system('gdown --folder 1WzypEZh_fa3ZNmTZ4_KMfGVAbuBO95xR -O informes')
 
     informesDirect = os.popen("ls").read()
     assert_that(informesDirect).contains('informes')
@@ -21,7 +21,7 @@ def test_CosechaAnualBuilder():
     informesFiles = os.popen("ls ./informes/").read()
     infome = informesFiles.split('\n')
 
-    ano = CosechaAnual(infome[0])
+    ano = CosechaAnual_init(infome[0])
 
     valor_ano = informesFiles.split('.')
 
@@ -45,9 +45,9 @@ def build_Predictor():
     cosechas_anteriores=[]
     for i in range(len(informNames)-1):
         if i < len(informNames)-2:
-            cosechas_anteriores.append(CosechaAnual(informNames[i]))
+            cosechas_anteriores.append(CosechaAnual_init(informNames[i]))
         else:
-            cosecha_actual = CosechaAnual(informNames[i])
+            cosecha_actual = CosechaAnual_init(informNames[i])
 
     return Predictor(cosechas_anteriores, cosecha_actual)
 

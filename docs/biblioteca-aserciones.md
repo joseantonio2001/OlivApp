@@ -10,6 +10,8 @@ Para la elección de nuestra librería de aserciones vamos ayudarnos de la infor
 
  - Frescura: refiriéndonos al estado (actualización) de la herramienta.  
 
+ - TDD: ya que se deberán ir pasando los tests de funcionalidades concretas.
+
 ## Análisis de Test Runner
 
 Ajustandome a las características de mi proyecto, los criterios de elección establecidos y los indices de popularidad que encontramos en [synk Advisor](https://snyk.io/advisor/python), he analizado los siguientes test-runners:

@@ -3,7 +3,7 @@ from assertpy import assert_that
 import os
 
 from olivapp.cosecha_anual import CosechaAnual, CosechaAnual_init
-from olivapp.preditor import Predictor
+from olivapp.predictor import Predictor
 
 def test_informes():
 

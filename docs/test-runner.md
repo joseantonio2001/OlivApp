@@ -1,6 +1,6 @@
 # TEST RUNNER
 
-El primer paso para poder testear el código de nuestro proyecto es disponer de un test runner que nos permita detectar errores en este, haciendo uso de una biblioteca de aserciones (#25).
+El primer paso para poder testear el código de nuestro proyecto es disponer de un test runner que nos permita detectar errores en este, haciendo uso de una biblioteca de aserciones ([#25](https://github.com/joseantonio2001/OlivApp/issues/25))
 
 ## Criterios de elección
 

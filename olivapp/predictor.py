@@ -30,7 +30,7 @@ class Predictor:
     def get_prediction(self) -> str:
         
         diff = self.__diferencia(self.__cosechas_anteriores[0])  
-        similar_year = self.__cosechas_anteriores[0].get_anio()
+        similar_year = self.__cosechas_anteriores[0]
 
         i=0
         for ano in self.__cosechas_anteriores:
@@ -44,6 +44,31 @@ class Predictor:
 
         return self.__to_string(similar_year)
 
+    def __diferencia(self, cosecha: CosechaAnual) -> float:
+
+        cosecha_act_norm = self.__normalizated(self.__cosecha_actual)
+        cosecha_x_normalizated = self.__normalizated(cosecha)
+
+        diferencia = 0.0
+        for x in range(len(cosecha_act_norm)):
+            diferencia = diferencia + abs(cosecha_act_norm[x] - cosecha_x_normalizated[x])
+
+        return round(diferencia,2)
+
+    def __normalizated(self, cosecha: CosechaAnual) -> list:
+        
+        normalizated_data = []
+
+        for m in Mes:
+            normalizated_data.append(self.__normalization_f(cosecha.get_evolucion_precios()[m.name]))
+            normalizated_data.append(self.__normalization_f(cosecha.get_existencias_iniciales()[m.name]))
+            normalizated_data.append(self.__normalization_f(cosecha.get_produccion()[m.name]))
+            normalizated_data.append(self.__normalization_f(cosecha.get_precipitaciones()[m.name]))
+
+            if(m.name == self.__cosecha_actual.get_meses_evaluables()):
+                break
+
+        return normalizated_data
 
     def __normalization_f(self, value: str) -> float:
         
@@ -56,8 +81,9 @@ class Predictor:
         return round(normalizated_value,4)
 
     def __to_string(self, similar_year: CosechaAnual) -> str:
+
         output = ('# OLIVAPP - Predicción sobre el mayor costo del aceite de oliva en el mercado para la próxima campaña de ' + str(self.__cosecha_actual.get_anio()+1) + '\n\n' +
-                '   Mediante una comparación por similitud de datos mensuales, se ha detectado que los datos de la campaña de ' + str(similar_year.get_anio() - 1) + ' son los que más se asemejan a los datos de las campaña actual (' + str(similar_year.get_anio()) + '), por lo que se prevee que '+
+                '   Mediante una comparación por similitud de datos mensuales, se ha detectado que los datos de la campaña de ' + str(similar_year.get_anio() - 1) + ' son los que más se asemejan a los datos de las campaña actual (' + str(self.__cosecha_actual.get_anio()) + '), por lo que se prevee que '+
                 'en la siguiente campaña el aceite de oliva alcanzará su mayor precio en mercado en el mes de ' + str(similar_year.get_mes_prec_máx()) + '\n')
             
         return output

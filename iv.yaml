@@ -7,4 +7,4 @@ automatizar:
   orden: poe
   
 test: 
-  - tests/test_OlivApp.py
+  - tests/test_olivApp.py

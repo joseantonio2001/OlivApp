@@ -13,6 +13,7 @@ assertpy = "^1.1"
 gdown = "^4.5.4"
 
 [tool.poetry.group.dev.dependencies]
+pytest = "^4.6.9"
 poethepoet = "^0.16.4"
 
 [tool.poe.tasks]

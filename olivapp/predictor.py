@@ -44,20 +44,6 @@ class Predictor:
 
         return self.__to_string(similar_year)
 
-    def __diferencia(self, cosecha: CosechaAnual) -> float:
-
-        diferencia = 0.0
-        for mes in Mes:
-            diferencia = (diferencia + abs(float(self.__cosecha_actual.get_evolucion_precios()[mes.name]) - float(cosecha.get_evolucion_precios()[mes.name])) +
-                        abs(float(self.__cosecha_actual.get_existencias_iniciales()[mes.name]) - float(cosecha.get_existencias_iniciales()[mes.name])) +
-                        abs(float(self.__cosecha_actual.get_produccion()[mes.name]) - float(cosecha.get_produccion()[mes.name])) +
-                        abs(float(self.__cosecha_actual.get_precipitaciones()[mes.name]) - float(cosecha.get_precipitaciones()[mes.name])))
-
-
-            if(mes.name == self.__cosecha_actual.get_meses_evaluables()):
-                break
-
-        return round(diferencia,2)
 
     def __normalization_f(self, value: str) -> float:
         

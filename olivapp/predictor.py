@@ -18,6 +18,14 @@ class Predictor:
         self.__cosechas_anteriores = cosechas_anteriores
         self.__cosecha_actual = cosecha_actual
 
+    def get_anio(self) -> int:
+        return self.__year
+
+    def get_cosechas_anteriores(self) -> list:
+        return self.__cosechas_anteriores
+
+    def get_cosecha_actual(self) -> CosechaAnual:
+        return self.__cosecha_actual
 
     def get_prediction(self) -> str:
         

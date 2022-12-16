@@ -72,19 +72,19 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7
 
 [[package]]
 name = "filelock"
-version = "3.8.0"
+version = "3.8.2"
 description = "A platform independent file lock."
 category = "main"
 optional = false
 python-versions = ">=3.7"
 
 [package.extras]
-docs = ["furo (>=2022.6.21)", "sphinx (>=5.1.1)", "sphinx-autodoc-typehints (>=1.19.1)"]
-testing = ["covdefaults (>=2.2)", "coverage (>=6.4.2)", "pytest (>=7.1.2)", "pytest-cov (>=3)", "pytest-timeout (>=2.1)"]
+docs = ["furo (>=2022.9.29)", "sphinx (>=5.3)", "sphinx-autodoc-typehints (>=1.19.5)"]
+testing = ["covdefaults (>=2.2.2)", "coverage (>=6.5)", "pytest (>=7.2)", "pytest-cov (>=4)", "pytest-timeout (>=2.1)"]
 
 [[package]]
 name = "gdown"
-version = "4.5.4"
+version = "4.6.0"
 description = "Google Drive direct download of big files."
 category = "main"
 optional = false
@@ -321,12 +321,12 @@ colorama = [
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
 ]
 filelock = [
-    {file = "filelock-3.8.0-py3-none-any.whl", hash = "sha256:617eb4e5eedc82fc5f47b6d61e4d11cb837c56cb4544e39081099fa17ad109d4"},
-    {file = "filelock-3.8.0.tar.gz", hash = "sha256:55447caa666f2198c5b6b13a26d2084d26fa5b115c00d065664b2124680c4edc"},
+    {file = "filelock-3.8.2-py3-none-any.whl", hash = "sha256:8df285554452285f79c035efb0c861eb33a4bcfa5b7a137016e32e6a90f9792c"},
+    {file = "filelock-3.8.2.tar.gz", hash = "sha256:7565f628ea56bfcd8e54e42bdc55da899c85c1abfe1b5bcfd147e9188cebb3b2"},
 ]
 gdown = [
-    {file = "gdown-4.5.4-py3-none-any.whl", hash = "sha256:99b99d537eb6dee3cfffeafb73e5558c347ca2a97a59864c100e6c0bb5f42a95"},
-    {file = "gdown-4.5.4.tar.gz", hash = "sha256:6aff67d1eb22fb3a5aed2b4563794aa3506c72df083f86b1ec493252709ca68f"},
+    {file = "gdown-4.6.0-py3-none-any.whl", hash = "sha256:e75c5aa8be8ea1cac642d4793f884339d887ab5e07aaa57fafa16c8a56a0cde5"},
+    {file = "gdown-4.6.0.tar.gz", hash = "sha256:5ce3db0aeda54f46caacb2df86f31c3e3ecd17c355689e6456d85fb528ba9749"},
 ]
 idna = [
     {file = "idna-3.4-py3-none-any.whl", hash = "sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"},

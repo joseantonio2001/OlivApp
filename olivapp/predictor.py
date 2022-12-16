@@ -59,6 +59,16 @@ class Predictor:
 
         return round(diferencia,2)
 
+    def __normalization_f(self, value: str) -> float:
+        
+        value = float(value)
+        value_max = 5000
+        value_min = 0
+        
+        normalizated_value = (value - value_min) / (value_max - value_min)
+
+        return round(normalizated_value,4)
+
     def __to_string(self, similar_year: CosechaAnual) -> str:
         output = ('# OLIVAPP - Predicción sobre el mayor costo del aceite de oliva en el mercado para la próxima campaña de ' + str(self.__cosecha_actual.get_anio()+1) + '\n\n' +
                 '   Mediante una comparación por similitud de datos mensuales, se ha detectado que los datos de la campaña de ' + str(similar_year.get_anio() - 1) + ' son los que más se asemejan a los datos de las campaña actual (' + str(similar_year.get_anio()) + '), por lo que se prevee que '+

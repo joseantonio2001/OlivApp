@@ -42,7 +42,7 @@ class CosechaAnual:
     
     
     def get_precio_maximo(self) -> float:
-        return self.precio_maximo
+        return self.precio_max
  
 
     def get_mes_prec_máx(self) -> Mes:

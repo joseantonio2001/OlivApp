@@ -36,3 +36,19 @@ def test_informes():
         assert_that(open(DIRECTORIO_INFORMES + x, 'r').read().find(CABECERA_INFORMES)).is_not_equal_to(-1)
         assert_that(len(open(DIRECTORIO_INFORMES + x).readlines())).is_equal_to(15)
 
+#COMPROBACIONES: PREDICCION
+def test_Prediction(Predictor_Obj):
+    
+    prediccion1 = Predictor_Obj
+    out1 = prediccion1.get_prediction()
+
+    prediccion2 = Predictor_Obj
+    out2 = prediccion2.get_prediction()
+
+    #Comprobar si ejecutandolo con los mismo datos de entrada, sigue dando el mismo resultad, es decir, comprobando si es firme
+    assert_that(out1).is_equal_to(out2)
+
+    mes_prediction = Predictor_Obj.get_prediction()[POS_MES_PREDICTION:len(Predictor_Obj.get_prediction())-1]
+
+    assert_that(mes_prediction in MESES).is_equal_to(True)
+

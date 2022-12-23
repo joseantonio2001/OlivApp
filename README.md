@@ -59,6 +59,6 @@ Si consultas este enlace podrás ver un ejemplo sencillo de la lógica que utili
 	
 
 	Se han desarrollado 4 tests para verificar el correcto funcionamiento sel código implementado; Para ejecutarlos usaremos la orden **poe test**:
-	![verificacion test](https://user-images.githubusercontent.com/85243896/204771235-25f6efe6-4ecb-4f71-a79f-a5674a8ffce2.png)
+	![pytest](https://user-images.githubusercontent.com/85243896/209347336-1cf0b99b-14c6-4bc8-8d41-2dac339ef504.png)
 
 	

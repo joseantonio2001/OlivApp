@@ -52,3 +52,13 @@ Si consultas este enlace podrás ver un ejemplo sencillo de la lógica que utili
 
 	![CORRECTO_FUNCIONAMIENTO](https://user-images.githubusercontent.com/85243896/203502509-07ebc861-a752-4101-a044-d8b12ef543d2.png)
 
+ - Test runner: [Pytest](https://github.com/joseantonio2001/OlivApp/issues/24)
+
+ - Assertion Library: [assertpy](https://github.com/joseantonio2001/OlivApp/issues/25)
+
+	
+
+	Se han desarrollado 4 tests para verificar el correcto funcionamiento sel código implementado; Para ejecutarlos usaremos la orden **poe test**:
+	![pytest](https://user-images.githubusercontent.com/85243896/209347336-1cf0b99b-14c6-4bc8-8d41-2dac339ef504.png)
+
+	

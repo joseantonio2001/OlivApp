@@ -7,15 +7,23 @@ license = "GPL-3.0 license"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
+pytest = "^4.6.9"
+assertpy = "^1.1"
+gdown = "^4.5.4"
 
 [tool.poetry.group.dev.dependencies]
+pytest = "^4.6.9"
 poethepoet = "^0.16.4"
 
 [tool.poe.tasks]
 installPoetry = "poetry install"
+installPytest = "pip install pytest"
+installAssertpy = "pip install assertpy"
 check = "python3.8 -m compileall olivapp/"
-
+installGdown = "pip install gdown"
+getInformes ="gdown --folder 1WzypEZh_fa3ZNmTZ4_KMfGVAbuBO95xR -O informes"
+test = "pytest-3"
 
 [build-system]
 requires = ["poetry-core"]
